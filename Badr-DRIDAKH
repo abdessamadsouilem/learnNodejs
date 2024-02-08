@@ -1,0 +1,16 @@
+// small app by Badr DRIDAKH
+const readline = require('readline');
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.question("What's your favorite food? ", function (answer) {
+    if (answer.trim().toLowerCase() === 'djaj mhamar') {
+        console.log('You have a good taste!');
+    } else {
+        console.log('Nta machi dawa9!');
+    }
+    rl.close();
+});
