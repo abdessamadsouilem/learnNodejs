@@ -1,0 +1,5 @@
+const fs = require('node:fs')
+let readText = fs.readFileSync('text.txt','utf8')
+console.log(readText)
+fs.appendFileSync('text.txt','\nif failure is not an option, then neither is success.\n ')
+console.log(readText)
